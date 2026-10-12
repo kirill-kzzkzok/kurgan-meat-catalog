@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Каталог KURGAN, домашняя еда с доставкой по Казани."
+    />
+    <title>Каталог | KURGAN</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="catalog-page">
+    <header class="site-header" id="top">
+      <div class="header-inner">
+        <a class="brand" href="/"
+          ><img src="assets/logo.png" alt="Логотип KURGAN" /><span
+            >KURGAN</span
+          ></a
+        >
+        <nav class="main-nav" aria-label="Навигация">
+          <a class="active" href="/catalog">Каталог</a
+          ><a href="/#delivery">Доставка</a><a href="/#contacts">Контакты</a>
+        </nav>
+        <div class="header-actions">
+          <div class="phone-wrap">
+            <button
+              class="phone-trigger"
+              id="phoneTrigger"
+              aria-expanded="false"
+              aria-label="Телефон и мессенджеры"
+            >
+              <span class="phone-glyph">☎</span>
+            </button>
+            <div class="phone-popover" id="phonePopover">
+              <a class="phone-number" href="tel:+79093052575"
+                >+7 909 305-25-75</a
+              ><span>10:00–23:00 каждый день</span>
+            </div>
+          </div>
+          <button
+            class="cart-trigger"
+            id="cartTrigger"
+            aria-label="Открыть корзину"
+          >
+            <span class="cart-glyph" aria-hidden="true"></span
+            ><b id="headerCount">0</b>
+          </button>
+        </div>
+        <button
+          class="mobile-cart-icon"
+          id="mobileCartIcon"
+          aria-label="Открыть корзину"
+        >
+          <span class="cart-glyph" aria-hidden="true"></span
+          ><b id="mobileHeaderCount">0</b>
+        </button>
+      </div>
+    </header>
+    <main>
+      <section
+        class="catalog section-shell"
+        id="catalog"
+        aria-labelledby="catalog-title"
+      >
+        <div class="catalog-intro">
+          <div><h1 id="catalog-title">Каталог</h1></div>
+          <p>
+            Выберите категорию и блюдо. Готовим после заказа и привозим горячим.
+          </p>
+        </div>
+        <div class="category-tabs" role="tablist" aria-label="Категории">
+          <button class="category-tab active" data-filter="all">Все</button
+          ><button class="category-tab" data-filter="manti">Манты</button
+          ><button class="category-tab" data-filter="khinkali">Хинкали</button
+          ><button class="category-tab" data-filter="shashlik">Шашлык</button
+          ><button class="category-tab" data-filter="lamb">Баранина</button
+          ><button class="category-tab" data-filter="pork">Свинина</button>
+        </div>
+        <div class="menu-grid" id="menuGrid"></div>
+      </section>
+    </main>
+    <footer class="site-footer" id="contacts">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <img src="assets/logo.png" alt="" /><strong>KURGAN</strong>
+        </div>
+        <div class="footer-links">
+          <a href="/catalog">Каталог</a><a href="/#delivery">Доставка</a
+          ><a href="tel:+79093052575" class="phone-number">+7 909 305-25-75</a>
+        </div>
+        <p>Домашняя еда с доставкой по Казани.</p>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 KURGAN</span><span>Ежедневно · 10:00–23:00</span>
+      </div>
+    </footer>
+    <aside class="cart-drawer" id="cartDrawer" aria-hidden="true">
+      <div class="cart-overlay" id="cartOverlay"></div>
+      <div class="cart-panel">
+        <div class="cart-head">
+          <div>
+            <h2>Корзина <small id="drawerCount">0</small></h2>
+          </div>
+          <button class="close-cart" id="closeCart" aria-label="Закрыть">
+            ×
+          </button>
+        </div>
+        <div class="cart-items" id="cartItems"></div>
+        <div class="cart-empty" id="cartEmpty">
+          <p>Корзина пуста</p>
+          <span>Добавьте блюда в каталоге.</span>
+        </div>
+        <div class="cart-foot">
+          <div class="cart-total">
+            <span>Итого</span><strong id="cartTotal">0 ₽</strong>
+          </div>
+          <button class="checkout" id="checkout">
+            Оформить заказ <span>→</span>
+          </button>
+          <div class="checkout-contact" id="checkoutContact" hidden>
+            <strong>Связаться с нами</strong
+            ><a href="tel:+79093052575" class="phone-contact"
+              >☎ <span>+7 909 305-25-75</span></a
+            >
+          </div>
+        </div>
+      </div>
+    </aside>
+    <button class="mobile-cart-bar" id="mobileCartBar">
+      <span>Корзина: <b id="mobileCartCount">0</b></span
+      ><strong id="mobileCartTotal">0 ₽</strong><span>→</span>
+    </button>
+    <div class="toast" id="toast" role="status">Добавлено</div>
+    <script src="script.js"></script>
+  </body>
+</html>
