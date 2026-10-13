@@ -133,35 +133,14 @@ button {
 .phone-popover.open {
   display: block;
 }
-.phone-popover strong {
-  display: block;
-  font-size: 16px;
-  margin-bottom: 5px;
-}
+
 .phone-popover > span {
   display: block;
   font-size: 10px;
   color: var(--muted);
   margin-bottom: 14px;
 }
-.popover-socials {
-  display: flex;
-  gap: 5px;
-}
-.popover-socials a,
-.checkout-links a {
-  width: 28px;
-  height: 28px;
-  border-radius: 3px;
-  overflow: hidden;
-  background: #eee;
-}
-.popover-socials img,
-.checkout-links img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
+
 .cart-trigger {
   display: inline-flex;
   align-items: center;
@@ -219,13 +198,7 @@ button {
 .home-copy {
   max-width: 810px;
 }
-.home-kicker {
-  color: var(--red);
-  font-size: 10px;
-  letter-spacing: 0.2em;
-  font-weight: 800;
-  margin: 0 0 18px;
-}
+
 .home h1 {
   font-size: clamp(58px, 8.6vw, 128px);
   line-height: 0.89;
@@ -299,12 +272,7 @@ button {
   gap: 40px;
   margin-bottom: 34px;
 }
-.catalog-intro h2 {
-  font-size: clamp(42px, 5vw, 72px);
-  line-height: 0.96;
-  letter-spacing: -0.065em;
-  margin: 0;
-}
+
 .catalog-intro > p {
   max-width: 300px;
   color: var(--muted);
@@ -554,14 +522,7 @@ button {
   border-bottom: 1px solid var(--line);
   padding-bottom: 21px;
 }
-.cart-label {
-  display: block;
-  color: var(--red);
-  font-size: 10px;
-  letter-spacing: 0.18em;
-  font-weight: 800;
-  margin-bottom: 14px;
-}
+
 .cart-head h2 {
   font-size: 32px;
   letter-spacing: -0.06em;
@@ -681,23 +642,7 @@ button {
   font-size: 22px;
   font-weight: 400;
 }
-.checkout-links {
-  display: flex;
-  gap: 6px;
-  justify-content: flex-end;
-  margin-top: 12px;
-}
-.checkout-links a {
-  width: 25px;
-  height: 25px;
-}
-.checkout-links .phone-small {
-  display: grid;
-  place-items: center;
-  background: var(--ink);
-  color: #fff;
-  font-size: 16px;
-}
+
 .mobile-cart-bar {
   display: none;
 }
@@ -795,9 +740,7 @@ button {
     display: block;
     margin-bottom: 24px;
   }
-  .catalog-intro h2 {
-    font-size: 45px;
-  }
+
   .catalog-intro > p {
     font-size: 12px;
     margin-top: 18px;
@@ -931,13 +874,6 @@ button {
   content: "☎";
   font-size: 20px;
 }
-.phone-small {
-  font-size: 0 !important;
-}
-.phone-small:before {
-  content: "☎";
-  font-size: 15px;
-}
 
 /* restrained Neue Haas hierarchy */
 body {
@@ -968,16 +904,11 @@ body {
 .checkout span {
   color: #111;
 }
-.catalog-intro h1,
-.catalog-intro h2 {
+.catalog-intro h1 {
   font-weight: 650;
   letter-spacing: -0.04em;
 }
-.home-kicker,
-.cart-label {
-  font-weight: 500;
-  letter-spacing: 0.14em;
-}
+
 .dish-name {
   font-weight: 600;
 }
@@ -1110,17 +1041,7 @@ body {
   font-size: 12px;
   font-weight: 600;
 }
-.checkout-contact .checkout-links {
-  justify-content: flex-start;
-  margin-top: 14px;
-}
-.checkout-contact .checkout-links a {
-  width: 30px;
-  height: 30px;
-}
-.checkout-contact .checkout-links .phone-small {
-  display: none;
-}
+
 .catalog-button:hover span {
   color: #111;
 }
@@ -1158,7 +1079,6 @@ body {
   font-size: clamp(50px, 6.8vw, 96px);
 }
 .catalog-intro h1,
-.catalog-intro h2,
 .contact-band h2 {
   font-weight: 600;
 }
@@ -1244,26 +1164,7 @@ body {
   font-size: 14px;
   line-height: 1.45;
 }
-.footer-socials {
-  display: flex;
-  align-items: center;
-  gap: 6px;
-  margin-left: 2px;
-}
-.footer-socials a {
-  width: 30px;
-  height: 30px;
-  display: block;
-  border-radius: 3px;
-  overflow: hidden;
-  background: #eee;
-}
-.footer-socials img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
+
 .phone-contact {
   font-size: 0;
 }
@@ -1272,10 +1173,7 @@ body {
   font-size: 18px;
   filter: grayscale(1) brightness(0);
 }
-.phone-contact-icon {
-  font-size: 18px;
-  filter: grayscale(1) brightness(0);
-}
+
 .phone-contact > span:last-child {
   font-size: 13px;
 }
